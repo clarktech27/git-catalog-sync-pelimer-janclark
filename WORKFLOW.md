@@ -42,7 +42,10 @@
 ![Task 5](screenshots/task-5.png)
 
 ## Task 6: Diverge a third time — rebase
-![Task 6](screenshots/task-6.png)
+![Task 6](screenshots/task-6-rejected.png)
+
+## Task 6: Diverge a third time — rebase
+![Task 6](screenshots/task-6-corrected.png)
 
 ## Task 7: Merge into main, tag, push
 ![Task 7](screenshots/task-7.png)
