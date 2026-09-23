@@ -14,11 +14,11 @@
 
 
 **2. Compare Task 3's two-way conflict to Task 5's three-way conflict — what got harder with a third line of work?**
-      Task 3 was a straightforward choice between two visible changes — grace period vs. rounding. Task 5's conflict combined two sides that were each already merged histories, so the markers didn't clearly show three separate contributions; I had to remember what each one was supposed to do and recombine them correctly. Getting the order right (round, then floor to $1, then cap at $20) mattered more, since a wrong order could quietly break one behavior without causing an actual Git conflict.
+      Task 3 was a straightforward choice between two visible changes grace period vs. rounding. Task 5's conflict combined two sides that were each already merged histories, so the markers didn't clearly show three separate contributions. I had to remember what each one was supposed to do and recombine them correctly. Getting the order right (round, then floor to $1, then cap at $20) mattered more, since a wrong order could quietly break one behavior without causing an actual Git conflict.
      
 
 **3. What's the actual difference between how you resolved Task 5 (merge) and Task 6 (rebase)?**
-        The merge in Task 5 created a real merge commit with two parents, so the log still shows both branches coming together — the true, slightly messy order things happened in. The rebase in Task 6 didn't create a merge commit at all; Git replayed my $1-minimum commit on top of the latest history with a new hash, producing a clean, linear log with no visible branching, even though the work was actually done in parallel.
+        The merge in Task 5 created a real merge commit with two parents, so the log still shows both branches coming together  true, slightly messy order things happened in. The rebase in Task 6 didn't create a merge commit at all, git replayed my $1-minimum commit on top of the latest history with a new hash, producing a clean, linear log with no visible branching, even though the work was actually done in parallel.
 
 **4. If this were a real team of three, what one process change would have prevented all three rejected pushes?**
        Requiring everyone to fetch/pull right before starting new work, not just before pushing. All three rejections happened because someone began editing a local copy that was already stale, unaware the branch had moved.
